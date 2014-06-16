@@ -2,8 +2,8 @@
 
 ## Introduction
 
-- Store key/value pairs locally within the client web browser 
-- Persists after the browser is refreshed/closed/navigated away from
+- Stores key/value pairs locally within the client web browser 
+- Key/value keys persists after the browser is refreshed/closed/navigated away from
 - Data doesn’t need to be transmitted to the remote web browser 
 - Compatible across all major web browsers 
 - Can be used to remember login usernames
@@ -39,3 +39,10 @@ localStorage.removeItem("key")
 ## Things to consider 
 - localStorage methods only take strings as it's arguments
 - The maximum amount of data stored cannot exceed 5 mb
+- Not a replacement total replacement for back-end databases
+
+## Additional Links 
+- Context explanation http://diveintohtml5.info/storage.html 
+- Thorough method explanations + cool tricks to work around string-only limitation
+http://www.smashingmagazine.com/2010/10/11/local-storage-and-how-to-use-it/
+- browser compatibility http://caniuse.com/namevalue-storage

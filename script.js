@@ -9,6 +9,7 @@ $(document).ready(function(){
     for (var i=0; i<todoArr.length; i++) {
       $('#todoList').append(newTodo(todoArr[i]));
     };
+  // if there is no localStorage, then a todoArr is instantiated
   } else {
     var counter = 0;
     var todoArr = [];
@@ -52,7 +53,7 @@ $(document).ready(function(){
     $('#todoText').val('');
   });
 
-  // function that adds strikethrough to target todo
+  // function that adds strikethrough to target todo on click
 
   $('#todos').delegate('.newTodo','click', function(e){
     e.preventDefault();
@@ -65,7 +66,7 @@ $(document).ready(function(){
     var li = $(this).closest('li');
     delete todoArr[li.attr('id')];
     li.remove();
-    console.log(todoArr)
+    // console.log(todoArr)
   });
 
   // allows user to save todos currently displayed to localStorage
@@ -77,7 +78,7 @@ $(document).ready(function(){
     localStorage.setItem('todoArr', todosInString);
     // var storedTodos = localStorage.getItem('todoArr');
     // console.log(storedTodos);
-  })
+  });
 
   // function that deletes all todos
 
