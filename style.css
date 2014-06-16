@@ -1,0 +1,44 @@
+body {
+	font-family: helvetica;
+}
+
+#todoForm {
+	border: 2px solid black;
+	height: 50px;
+	width: 300px;
+	margin: 0 auto;
+	background-color: silver;
+}
+
+.trash {
+	float:right;
+	height: 20px;
+	width: 20px;
+}
+
+#todos {
+	border: 2px solid black;
+	height: 400px;
+	width: 300px;
+	margin: 0 auto;
+	background-color: silver;
+}
+
+.newTodo {
+	font-family: cursive;
+	border: 2px solid black;
+	width: 250px;
+	list-style-type: none;
+	margin-left: -15px;
+}
+
+.toggle {
+	font-family: cursive;
+	width: 200px;
+}
+
+.doneTodo {
+	text-decoration: line-through;
+
+}
+
